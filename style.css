@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.header{
+    padding: 0 45px;
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-out;
+}
+
+.nav a:hover{
+    color: #c5cae9;
+    transform: rotate(-10deg);
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav li{
+    margin-left: 20px;
+}
+
+.hero{
+    background-color: #c5cae9;
+    background-image: url("emilpic7.jpg");
+    background-size: cover;
+    padding: 60px 45px ;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-inner{
+    max-width: 760px;
+}
+
+.hero h1{
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 0;
+    color: white;
+}
+
+.hero p{
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+button{
+    background-color: blue;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    background-color: #e8eaf6;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+}
+
+.ceo h2{
+    margin-bottom: 0%;
+}
+
+.container div{
+    margin: 0 auto;
+    padding: 10px;
+    /* gap: 40px; */
+}
+
+.video h3{
+    margin-bottom: 0%;
+}
+
+.gallary{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallary div{
+    margin: 0 auto;
+    padding: 10px;
+    gap: 30px;  
+}
+
+.gallary img {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    object-fit: fill;
+}
+
+
+
+
+.features{
+    background-color: #e8eaf6;
+    padding: 60px 45px;
+}
+
+.features-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+}
+
+
+/* .video{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+} */
+
+.featured-items h3{
+    color: slateblue;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.featured-items p{
+    margin: 0;
+    line-height: 1.6;
+    font-weight: normal;
+
+}
+
+.footer{
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    background-color: darkgray;
+    font-size: x-small;
+}
